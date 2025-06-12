@@ -48,6 +48,37 @@
             background-color: #e0559c;
         }
 
+        .btn {
+            background-color: #ff69b4;
+            color: white;
+            font-size: 1.2rem;
+            padding: 5px 20px;
+            border: none;
+            border-radius: 30px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            animation: pular 1s infinite ease-in-out;
+            box-shadow: 0 5px 15px rgba(255, 105, 180, 0.5);
+            transition: transform 0.2s;
+        }
+
+        @keyframes pular {
+
+            0%,
+            100% {
+                transform: translateY(0);
+            }
+
+            50% {
+                transform: translateY(-10px);
+            }
+        }
+
+
+        .btn:hover {
+            background-color: #e0559c;
+        }
+
         iframe.spotify-player {
             width: 100%;
             max-width: 600px;
@@ -109,17 +140,28 @@
         <div class="glide mt-4">
             <div class="glide__track" data-glide-el="track">
                 <ul class="glide__slides">
-                    <li class="glide__slide"><img src="img/img1.webp" loading="lazy" class="img-fluid" alt="Foto 1"></li>
-                    <li class="glide__slide"><img src="img/img2.webp" loading="lazy" class="img-fluid" alt="Foto 2"></li>
-                    <li class="glide__slide"><img src="img/img3.webp" loading="lazy" class="img-fluid" alt="Foto 3"></li>
-                    <li class="glide__slide"><img src="img/img4.webp" loading="lazy" class="img-fluid" alt="Foto 4"></li>
-                    <li class="glide__slide"><img src="img/img5.webp" loading="lazy" class="img-fluid" alt="Foto 5"></li>
-                    <li class="glide__slide"><img src="img/img6.webp" loading="lazy" class="img-fluid" alt="Foto 6"></li>
-                    <li class="glide__slide"><img src="img/img7.webp" loading="lazy" class="img-fluid" alt="Foto 7"></li>
-                    <li class="glide__slide"><img src="img/img8.webp" loading="lazy" class="img-fluid" alt="Foto 8"></li>
-                    <li class="glide__slide"><img src="img/img9.webp" loading="lazy" class="img-fluid" alt="Foto 9"></li>
-                    <li class="glide__slide"><img src="img/img10.webp" loading="lazy" class="img-fluid" alt="Foto 10"></li>
-                    <li class="glide__slide"><img src="img/img11.webp" loading="lazy" class="img-fluid" alt="Foto 11"></li>
+                    <li class="glide__slide"><img src="img/img1.webp" loading="lazy" class="img-fluid" alt="Foto 1">
+                    </li>
+                    <li class="glide__slide"><img src="img/img2.webp" loading="lazy" class="img-fluid" alt="Foto 2">
+                    </li>
+                    <li class="glide__slide"><img src="img/img3.webp" loading="lazy" class="img-fluid" alt="Foto 3">
+                    </li>
+                    <li class="glide__slide"><img src="img/img4.webp" loading="lazy" class="img-fluid" alt="Foto 4">
+                    </li>
+                    <li class="glide__slide"><img src="img/img5.webp" loading="lazy" class="img-fluid" alt="Foto 5">
+                    </li>
+                    <li class="glide__slide"><img src="img/img6.webp" loading="lazy" class="img-fluid" alt="Foto 6">
+                    </li>
+                    <li class="glide__slide"><img src="img/img7.webp" loading="lazy" class="img-fluid" alt="Foto 7">
+                    </li>
+                    <li class="glide__slide"><img src="img/img8.webp" loading="lazy" class="img-fluid" alt="Foto 8">
+                    </li>
+                    <li class="glide__slide"><img src="img/img9.webp" loading="lazy" class="img-fluid" alt="Foto 9">
+                    </li>
+                    <li class="glide__slide"><img src="img/img10.webp" loading="lazy" class="img-fluid" alt="Foto 10">
+                    </li>
+                    <li class="glide__slide"><img src="img/img11.webp" loading="lazy" class="img-fluid" alt="Foto 11">
+                    </li>
                 </ul>
             </div>
         </div>
@@ -144,6 +186,7 @@
                 <br><br><br>
                 E não fique achando que é só isso, ainda tem uma lembrancinha...
             </p>
+            <a class="btn mx-auto" href="gift-card.html">ABRIR LEMBRANCINHA</a>
         </div>
     </div>
 
