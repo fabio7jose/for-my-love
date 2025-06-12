@@ -135,7 +135,7 @@
             allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy">
         </iframe>
 
-        <!-- Seu conteúdo todo aqui -->
+        <!-- Conteúdo -->
         <p>São momentos ao seu lado que me faz me sentir bem...</p>
         <div class="glide mt-4">
             <div class="glide__track" data-glide-el="track">
@@ -258,11 +258,9 @@
             }, 5000);
         }
 
-        // Dentro do eventListener do botão "Iniciar":
+        // Cria coração ao apertar btn iniciar
         document.getElementById("botaoIniciar").addEventListener("click", () => {
-            // ... código existente ...
-
-            setInterval(criarCoracao, 300); // começa a cair corações após o clique
+            setInterval(criarCoracao, 300);
         });
     </script>
 </body>
